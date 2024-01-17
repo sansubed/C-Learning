@@ -41,8 +41,11 @@ Functional -> can OOP and Procedural
 C# is based on garbage collection: no delete statement
 If you don’t need an object, then just let execution pass through the method and when
 It's over, the reference to the object will be forgotten. That object will be subject to garbage collection
+C# uses common language runtime (? research it!)
 
-Fundamentals of C#
+JAVA -> uses run time env
+
+Fundamentals of C# -> can do the procedural, OOP and fuctional -> but born OOP
 Types
 DateTime -> custom implementation which relies on the primitive type int
 % - remainder
@@ -50,5 +53,15 @@ DateTime -> custom implementation which relies on the primitive type int
 + -> concatination
 = -> assignment
 == -> is equivalence eg if(a==b)
+! -> negation
+&& -> and
+|| -> or
+return value is not implied 
+Method names in C# is beginning with the Capital letter
+reassingin the value to a variable when the object has already been created and value has been passed to it is illegal in C# and the compiler acts as there is not such field in the object in the first place. 
+
+Access Modifiers
+-
+-
 
 Objects
