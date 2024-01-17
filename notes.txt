@@ -61,7 +61,7 @@ Method names in C# is beginning with the Capital letter
 reassingin the value to a variable when the object has already been created and value has been passed to it is illegal in C# and the compiler acts as there is not such field in the object in the first place. 
 
 Access Modifiers
--
+-public, private, protected
 -
 
 Objects
@@ -90,4 +90,75 @@ class School{
 
 }
 
+
+/*
+using System;
+
+namespace HelloWorld
+{
+  class Program
+  {
+  int a = 1;
+  int b =2;
+  
+  public Program(){
+  }
+  
+  public Program(int a1, int b1){
+  a=a1;
+  b=b1;
+  }
+  
+  public void PrintMessage(){
+   Console.WriteLine("Hello World!");
+  }
+    static void Main(string[] args)
+    {
+    Program a1 = new Program(1,2);
+    Program a2 = new Program();
+    a2.PrintMessage();
+      Console.WriteLine("Hello World!"+a1.a +" "+ a1.b);    
+    }
+  }
+}
+
+
+
+
+*/
+ //this is runtime's work 
+   /* vtable CarFunctions =
+     0: Car.GetCarId
+     1: Car.GetNumber
+
+     CALL(instance, index, args)
+ {
+    vtable table = instance.functions;
+     address f = table[index];
+     return f(args);
+ }
+
+     class Car
+ {
+     private vtable functions;
+     private int id;
+     private int number;
+
+     public Car(int id1, int number1)
+     {
+         functions = CarFunctions;
+         id = id1;
+         this.number = number1;
+     }
+
+     public int GetCarId(int id)
+     {
+         return id;
+     }
+
+     public int GetNumber(int number)
+     {
+         return number;
+     }
+ }*/
 */
