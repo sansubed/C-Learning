@@ -1,0 +1,54 @@
+
+Procedural ->list of instructions to execute -> creating functions
+Design issue : Temporal coupling 
+
+Data and procedure are bundled as a single unit -> modular programming
+
+
+OOP -> can Procedural too.
+Constructor: does not class over the same data, procedures is same but not data
+Same procedure on distinct data -> oop benefits
+Objects: independent copies of data with same internal structure
+Class : blueprint where objects are created
+Data in class are called fields  (int a, int b, …)
+This -> reference 
+
+Memory Allocation:
+First allocate the memory and then to call a constructor to fil the data.
+But the memory needs to be released when the object is not in use.
+
+Memory Deallocation:
+Delete object1
+Delete object2
+
+DANGLING POINTER:
+For example if we have 3 obj:
+Obj 1 -> field1
+		Field 2
+Obj 2 -> field 1
+		Field 2
+Obj3 -> field 1
+		Field 2
+Obj=obj3
+Delete obj2
+Delete obj3
+Here obj is still pointing at 3. So this is a dangling pointer
+
+Delete all object that is not referenced!
+
+Functional -> can OOP and Procedural
+
+C# is based on garbage collection: no delete statement
+If you don’t need an object, then just let execution pass through the method and when
+It's over, the reference to the object will be forgotten. That object will be subject to garbage collection
+
+Fundamentals of C#
+Types
+DateTime -> custom implementation which relies on the primitive type int
+% - remainder
+/-dividend, drops the remainder
++ -> concatination
+= -> assignment
+== -> is equivalence eg if(a==b)
+
+Objects
